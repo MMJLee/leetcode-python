@@ -1,4 +1,4 @@
-#https://leetcode.com/problems/top-k-frequent-elements/
+# https://leetcode.com/problems/top-k-frequent-elements/
 from typing import List
 
 
@@ -13,6 +13,7 @@ class TopKElements():
             freqArray[freq].append(num)
         res = []
         # iterate backwards
+        # 0 not included since 0 freq nums don't exist
         for i in range(len(freqArray) - 1, 0, -1):
             for n in freqArray[i]:
                 res.append(n)
