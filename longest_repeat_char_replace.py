@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/longest-repeating-character-replacement/
+
 class LongestRepeatCharReplace():
     def longest_repeat_char_replace(self, str: str, k: int) -> int:
         count = {}
